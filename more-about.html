@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>More About School — Al-Qalam School</title>
+  
+  <link rel="icon" type="image/png" href="logo2.png" style="border-radius:5px;">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    .more-about-hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .more-about-hero h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .more-about-hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .picture-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 2rem;
+    }
+
+    .picture-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(20, 20, 40, 0.15);
+    }
+
+    .picture-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .picture-card-content {
+      padding: 1.5rem;
+    }
+
+    .picture-card h3 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .picture-card p {
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 900px) {
+      .more-about-hero h1 {
+        font-size: 2rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .more-about-hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .picture-card img {
+        height: 250px;
+      }
+
+      .picture-card-content {
+        padding: 1rem;
+      }
+
+      .picture-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .picture-card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="Logo" class="logo" />
+        <span class="school-name">Al-Qalam School</span>
+      </a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav-3" class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="more-about.html" class="active">Our Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="more-about-hero" style="margin-bottom: 20%;">
+      <h1>Life at Our School</h1>
+      <p style="font-size:15px;">A dynamic environment where students thrive through knowledge, creativity, and character-building experiences.</p>
+    </section>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+      <!-- FOLDER 1: All Students Together -->
+      <div class="picture-card">
+        <img src="students all.jpg" alt="All students together" />
+        <div class="picture-card-content">
+          <h3>🎓 Our School Family</h3>
+          <p>Every face in this photograph tells a story of dreams, dedication, and growth. Our students come together as one unified family, celebrating diversity and building lasting friendships. This moment captures the essence of what makes Al-Qalam School a place where every child belongs and thrives together.</p>
+        </div>
+      </div>
+
+      <div class="picture-card">
+        <img src="program.jpg" alt="School program" />
+        <div class="picture-card-content">
+          <h3>📚 Educational Excellence in Action</h3>
+          <p>Our comprehensive school program is designed to nurture both academic achievement and personal character development. Through engaging lessons and interactive learning experiences, we empower students to become confident learners and thoughtful global citizens.</p>
+        </div>
+      </div>
+
+      <!-- FOLDER 2: Awards & Recognition -->
+      <div class="picture-card">
+        <img src="award hands.jpg" alt="Awards ceremony" />
+        <div class="picture-card-content">
+          <h3>🏆 Celebrating Excellence</h3>
+          <p>Recognition and celebration are central to our school culture. These moments honor the hard work, dedication, and achievement of our outstanding students. Every award presented is a testament to perseverance and the power of believing in oneself.</p>
+        </div>
+      </div>
+
+      <!--Awards Girls-->
+      <div class="picture-card">
+        <img src="awards girls.jpg" alt="Principal with students" />
+        <div class="picture-card-content">
+          <h3>✨ Principal's Pride</h3>
+          <p>Our Principal stands proud as witness to student success and growth. These celebrations strengthen the bond between leadership and students, reinforcing our commitment to nurturing well-rounded individuals prepared for life's challenges.</p>
+        </div>
+      </div>
+
+      <!-- FOLDER 3: Special Days -->
+      <div class="picture-card">
+        <img src="orange.jpg" alt="Orange color day" />
+        <div class="picture-card-content">
+          <h3>🧡 Orange Day Fun</h3>
+          <p>Special color days bring joy and creativity to our school! Students dress in vibrant orange, celebrating individuality and creativity while building school spirit. These moments remind us that learning is not just about academics—it's about creating cherished memories.</p>
+        </div>
+      </div>
+  <!--RED DAY-->
+      <div class="picture-card">
+        <img src="red.jpg" alt="Red color day" />
+        <div class="picture-card-content">
+          <h3>❤️ Red Day Celebration</h3>
+          <p>Wrapped in red, our students light up the campus with enthusiasm and joy. These colorful celebrations foster unity, creativity, and a sense of belonging. Every color, every smile tells a story of our vibrant school community.</p>
+        </div>
+      </div>
+
+      <!-- FOLDER 4: Diverse Learning Experiences -->
+      <div class="picture-card">
+        <img src="cutie.jpg" alt="Playgroup children exam" />
+        <div class="picture-card-content">
+          <h3>👶 Early Learning Assessment</h3>
+          <p>Our youngest learners demonstrate remarkable curiosity and confidence as they engage in playful learning activities. These foundational moments build crucial skills in reading, counting, and social interaction, setting the stage for lifelong success.</p>
+        </div>
+      </div>
+
+      <!--The microscope-->
+      <div class="picture-card">
+        <img src="micro.jpg" alt="Student with microscope" style="width:100%;height:250px;"/>
+        <div class="picture-card-content">
+          <h3>🔬 Exploring the Unseen</h3>
+       <p>Big discoveries often start with the smallest details. By peering into the microscopic world, our students learn that there is always more to a story than meets the eye. At Al-Qalam School, we don't just teach science; we train young minds to look closer, think deeper, and envision a future built on precision and wonder.</p>
+        </div>
+      </div>
+               
+      <!--The BP cheacking-->
+      <div class="picture-card">
+        <img src="BP.jpg" alt="Health checkup - BP measurement" style="width:100%;height:280px;"/>
+        <div class="picture-card-content">
+          <h3>🩺 Science Beyond the Textbook</h3>
+          <p>Learning comes to life when theory meets practice. By conducting real-world health assessments, our students bridge the gap between classroom lessons and practical application. These interactive sessions foster critical thinking, precision, and a deep curiosity for the world  of biology and medicine.</p>
+        </div>
+      </div>
+
+      <div class="picture-card">
+        <img src="teaching.jpg" alt="Teacher understanding students" />
+        <div class="picture-card-content">
+          <h3>👨‍🏫 Mentorship & Understanding</h3>
+          <p>Exceptional teaching goes beyond textbooks. Our dedicated educators build genuine relationships with students, understanding their unique challenges and celebrating their victories. This personalized approach transforms education into empowerment.</p>
+        </div>
+      </div>
+
+      <div class="picture-card">
+        <img src="group studies.jpg" alt="Group study session" />
+        <div class="picture-card-content">
+          <h3>📖 Collaborative Learning</h3>
+          <p>Together, students accomplish more! Group study sessions foster teamwork, communication, and shared knowledge. Our collaborative learning environment prepares students to work effectively with others and solve problems creatively.</p>
+        </div>
+      </div>
+
+      <div class="picture-card">
+        <img src="stones.jpg" alt="Children shaping stones into shapes" />
+        <div class="picture-card-content">
+          <h3>🎨 Hands-On Geometry</h3>
+          <p>Learning comes alive when children create! Through playful construction with stones, our students discover shapes, spatial reasoning, and the joy of making. This creative approach makes mathematics tangible, engaging, and unforgettable.</p>
+        </div>
+      </div>
+  </main>
+   <!-- Call to Action Section -->
+    <section class="cta container">
+      <div class="cta-inner">
+        <h2>Join Our School</h2>
+        <p>Enroll now — limited seats. Contact us to schedule a visit.</p>
+        <a href="contact.html" class="btn-outline">Contact Admissions</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Al-Qalam School, Kanju Swat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

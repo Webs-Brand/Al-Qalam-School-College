@@ -1,0 +1,515 @@
+/* Variables */
+:root {
+  --accent:#2c7be5;
+  --accent-2:#ff7a59;
+  --bg:#f8f9fb;
+  --text:#222;
+  --muted:#666;
+  --max-width:1100px;
+  --radius:10px;
+  --shadow:0 6px 20px rgba(20,20,40,0.08);
+}
+
+/* Global */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+
+.img-home{
+  width: 70%;
+  border-radius: 10px;
+  display: block;   /* Allows the image to accept auto margins */
+  margin: 0 auto;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.space {
+  margin:50px;
+}
+.container{
+  max-width:var(--max-width);
+  margin:auto;
+  padding:1rem;
+}
+
+/* HEADER */
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  text-decoration:none;
+  color:inherit;
+}
+
+.logo{
+  height:45px;
+  border-radius:6px;
+}
+
+.school-name{
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.main-nav{
+  display:flex;
+  gap:.7rem;
+}
+
+
+.main-nav a {
+  text-decoration: none;
+  padding: .5rem .8rem;
+  color: var(--muted);
+  border-bottom: 2px solid transparent; /* Hidden line */
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent); /* Line appears on hover/active */
+  background: transparent;
+  box-shadow: none;
+}
+
+.nav-toggle{
+  display:none;
+  font-size:22px;
+  border:none;
+  background:none;
+}
+
+/* HERO */
+
+.hero{
+  background:linear-gradient(180deg,rgba(44,123,229,.06),transparent);
+  border-radius:12px;
+  margin:1rem 0;
+}
+
+.hero-inner{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:2rem;
+  margin-bottom:.4rem;
+}
+
+.hero-image{
+  flex:1;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+/* ABOUT PAGE*/
+
+/* Spacing for the About Page */
+.about-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.intro.space-lg {
+  margin-bottom: 50px; /* Big space after the title */
+  text-align: center;
+}
+
+/* Fix the grid spacing */
+.about-page .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;           /* Space between cards */
+  margin-bottom: 60px; /* Space after the card section */
+}
+.Dirc {
+  font-size: 1.1rem;
+  color: rgb(72, 72, 72);
+  margin-bottom: 1rem;
+}
+/* Ensure staff images look neat */
+.d-img{
+  width:50%;
+  height:250px;
+  border-radius:8px;
+}
+
+.p-img{
+  width:70%;
+  height:250px;
+  border-radius:8px;
+}
+
+.staff-img {
+  width: 200%;
+  height: 225px;      /* Fixes the height so cards stay even */
+  object-fit: cover;  /* Keeps image from looking squashed */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.staff-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspire-small {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: auto;   /* Pushes the quote to the bottom of the card */
+  padding-top: 10px;
+}
+
+/* Space for CTA */
+.cta-section {
+  margin-top: 40px;
+}
+
+/* Contact Page Specifics */
+.contact-info-card {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  /* Added to prevent internal content from overflowing the card */
+  overflow: hidden; 
+}
+
+.contact-info-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;            /* Adjusted gap for better mobile fit */
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;    /* Slightly smaller font for better fit */
+  font-weight: 500;
+  direction: ltr;
+  justify-content: flex-start;
+  
+  /* These lines force the long email address to wrap inside the box */
+  inline-size: 100%;
+  overflow-wrap: break-word; 
+  word-break: break-word;
+}
+
+.icon-circle {
+  font-size: 1.6rem;    /* Slightly smaller icon for mobile balance */
+  width: 45px;          /* Fixed container width for icons */
+  display: flex;        /* Switched to flex for better centering */
+  justify-content: center; 
+  align-items: center;
+  flex-shrink: 0;       /* This keeps the icon from squishing/leaning */
+}
+
+/* Admissions Box */
+.Addmm {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive side-by-side layout */
+.two-col {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 800px) {
+  .two-col {
+    flex-direction: column;
+  }
+  
+  .contact-info-card, .Addmm {
+    padding: 1.5rem; /* Slightly less padding on mobile to save space */
+  }
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.5rem;
+  margin:3rem 0;
+}
+
+.feature{
+  background:white;
+  padding:1.5rem;
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.feature h3 {
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.feature h2 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.feature ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.feature li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+/* GRID SYSTEM */
+
+.grid{
+  display:grid;
+  gap:1rem;
+}
+
+.grid-3{
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+/* Responsive grid for school-moments */
+.school-moments .grid-3{
+  grid-template-columns:repeat(2,1fr);
+}
+
+/* CARD */
+
+.card{
+  background:rgb(183, 182, 182);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  text-decoration:none;
+  color:inherit;
+  transition:transform .2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+/* IMPORTANT FIX FOR MOBILE IMAGES */
+
+.card img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+
+/* CARD BODY */
+
+.card-body{
+  padding:.7rem;
+  text-align:center;
+  font-size:.95rem;
+}
+
+/* SCHOOL MOMENTS */
+
+.school-moments{
+  margin:2rem 0;
+}
+
+.school-moments h2{
+  text-align:center;
+  margin-bottom:1.2rem;
+}
+
+/* STAFF CARDS */
+
+.staff-card{
+  background:white;
+  padding:1rem;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.staff-card img{
+  border-radius:10px;
+  margin-bottom:0.5rem;
+}
+
+/* CTA */
+
+.cta{
+  margin:3rem auto;
+}
+
+.cta-inner{
+  background:white;
+  padding:2rem;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+/* BUTTONS */
+
+.btn-primary{
+  display:inline-block;
+  padding:.6rem 1rem;
+  border-radius:8px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  margin-top: 1.5rem; /* Adds the space you want above the button */
+}
+
+.btn-outline{
+  display:inline-block;
+  padding:.6rem 1rem;
+  border-radius:8px;
+  border:2px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+}
+
+/* FOOTER */
+
+.site-footer{
+  background:white;
+  margin-top:2rem;
+  padding:1rem;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+/* RESPONSIVE */
+
+/* Tablets */
+@media (max-width:900px){
+
+.hero-inner{
+  flex-direction:column;
+  text-align:center;
+}
+
+.nav-toggle{
+  display:block;
+}
+
+.main-nav{
+  position:fixed;
+  top:70px;
+  right:20px;
+  background:white;
+  flex-direction:column;
+  padding:1rem;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+}
+
+.main-nav.show{
+  opacity:1;
+  visibility:visible;
+}
+
+.school-moments .grid-3{
+  grid-template-columns:repeat(2,1fr);
+  gap:1.2rem;
+}
+
+.two-col {
+  flex-direction: column;
+}
+
+}
+
+/* Small phones */
+@media (max-width:500px){
+
+.hero-text h1{
+  font-size:1.6rem;
+}
+
+.school-moments .grid-3{
+  grid-template-columns:1fr;
+  gap:1rem;
+}
+
+.Addmm {
+  padding: 1rem;
+}
+
+}
+
+/*admissions*/
+
+.two-col {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.Addmm {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
